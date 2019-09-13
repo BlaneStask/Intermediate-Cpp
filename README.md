@@ -1,3 +1,3 @@
 # Intermediate Programming in C++
 
-Here is some program assignments from CMPSC122 at Penn State
+Here are the programs from CMPSC122 at Penn State
