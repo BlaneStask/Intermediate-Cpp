@@ -7,7 +7,7 @@ using namespace std;
 
 int get_mask(string, char);
 void update_mask(string, string, string, char);
-bool guess(string, string, char);
+bool guess(string, string);
 
 int x = 0;
 
