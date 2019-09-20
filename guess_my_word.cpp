@@ -83,7 +83,7 @@ void update_mask(string word, string& mask, char letter) {
 }
 
 // Makes sure that the word and mask are of the same length
-// Returns true if word and mask have the same contents, and false otherwise
+// Returns true if word and mask have the same contents, and false otherwise.
 bool guessed(string word, string mask) {
     assert(word.length() == mask.length());
     return word == mask;
