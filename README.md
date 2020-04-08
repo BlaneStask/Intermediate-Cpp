@@ -38,7 +38,7 @@ The input consists of an initial line with an integer n, 0 ≤ n < 10,000 on a l
 
 The output of the program should be a single integer representing the Index of Indentifiable Inversions of the configuration.
 
-Sample Input
+Sample Input:
 
 5
 
@@ -52,7 +52,7 @@ Dave 5 6
 
 Eve 5 8
 
-Sample Output
+Sample Output:
 
 5
 
