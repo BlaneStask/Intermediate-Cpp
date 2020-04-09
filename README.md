@@ -6,7 +6,7 @@ Here are the programs from CMPSC122 at Penn State
 
 Nothing bothers Bob more than when taller people stand up in front and block his view at sporting events. It bothers him so much, that he has developed a measure for the displeasure that a crowd feels because of this phenomenon. Most days, he calls his measure the Index of Identifiable Inversions. Although when his view is blocked by this phenomenon, he calls it the "Down In Front" Aggravation Metric.
 
-The measure works as follows. In a line of standing people, the measure is equal to the number of people who are blocking others' views. Person A is blocking B's view, if
+The measure works as follows. In a line of standing people, the measure is equal to the number of people who are blocking others' views. Person A is blocking B's view, if:
 
 * A is taller than B
 
