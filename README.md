@@ -56,9 +56,15 @@ Sample Output:
 
 5
 
-----------------------------------------------
+## Library Headers
 
-Here is the algorithm for this problem: 
+```C++
+#include <iostream>
+#include <string>
+using namespace std;
+```
+
+## The algorithm for this problem: 
 
 ```C++
 if(n > 0 && n <= 10000){
