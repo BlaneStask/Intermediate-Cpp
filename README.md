@@ -1,6 +1,6 @@
 # Intermediate Programming in C++
 
-Here are the programs from CMPSC122 at Penn State
+Here are the programs from CMPSC122 at Penn State. In this course we worked on object oriented design and implementation including advanced C++ programming techniques, data structures, and the Standard Template Library. 
 
 ## Bob's "Down in Front" Aggravation Metric problem
 
