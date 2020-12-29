@@ -17,7 +17,6 @@ class person{
                 inch_h = inch;
             };
             int accessor(string name);
-    
             friend bool operator == (const person& hf, const person& hi);
             friend bool operator < (const person& hf, const person& hi);
             friend bool operator > (const person& hf, const person& hi);
@@ -25,8 +24,7 @@ class person{
             friend bool operator >= (const person& hf, const person& hi);
 };
 
-int main ()
-{
+int main (){
     int count = 0;
     int n;
     //number of people
@@ -45,7 +43,7 @@ int main ()
         while(i < n - 1){
             for(int j = i + 1; j < n; j++){
                 //larger but not last spot comparison
-                if (*list[i] > *list[j] && j != n - 1){
+                if(*list[i] > *list[j] && j != n - 1){
                     count++;
                 }
                 //last spot comparison
