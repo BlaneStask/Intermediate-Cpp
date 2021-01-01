@@ -6,23 +6,20 @@
 using namespace std;
 
 class binary_tree_node{
-public:
-    typedef char value_type;
+    public:
+        typedef char value_type;
+        binary_tree_node();
+        int data(){return data_field;}
+        binary_tree_node* left(){return left_field;}
+        binary_tree_node* right(){return right_field;}
+        bool evaluate();
+        void modify(string path, char symbol);
 
-    binary_tree_node();
-    
-    int data(){return data_field;}
-    binary_tree_node* left(){return left_field;}
-    binary_tree_node* right(){return right_field;}
-    bool evaluate();
-    void modify(string path, char symbol);
-   
-private:
-    value_type data_field;
-    binary_tree_node* left_field;
-    binary_tree_node* right_field;
+    private:
+        value_type data_field;
+        binary_tree_node* left_field;
+        binary_tree_node* right_field;
 };
-
 
 binary_tree_node::binary_tree_node(){
     cin >> data_field;
@@ -39,7 +36,6 @@ binary_tree_node::binary_tree_node(){
     }
 }
 
-
 bool binary_tree_node::evaluate(){
     if(data_field == 't') return true;
     if(data_field == 'f') return false;
@@ -52,7 +48,6 @@ bool binary_tree_node::evaluate(){
         return left_field->evaluate() && right_field->evaluate();
     if(data_field == '^')
         return left_field->evaluate() ^ right_field->evaluate();
-
     return 0;
 }
     
