@@ -4,21 +4,20 @@
 #include <iostream>
 #include <cassert>
 #include <string>
-
 using namespace std;
 
 int get_mask(string word, char letter);
 void update_mask(string word, string& mask, char letter);
 bool guessed(string word, string mask);
 
-int main() {
+int main(){
     string word = "abcfab";
     assert(get_mask(word,'a') == 34);
     assert(get_mask(word,'b') == 17);
     assert(get_mask(word,'c') == 8);
     assert(get_mask(word,'f') == 4);
-    for (char c = 'A'; c <= 'z'; c++) {
-        if (word.find(c) == string::npos) {
+    for(char c = 'A'; c <= 'z'; c++){
+        if (word.find(c) == string::npos){
             assert(get_mask(word,c) == 0);
         }
     }
@@ -51,11 +50,11 @@ int main() {
 }
 
 //Returns an integer indicating the location of where the letter appears in the string
-int get_mask(string word, char letter) {
+int get_mask(string word, char letter){
     int retval = 0;
-    for (int i = 0; i < word.length(); i++) {
+    for(int i = 0; i < word.length(); i++){
         retval = retval * 2;
-        if (word[i] == letter) {
+        if(word[i] == letter){
             retval++;
         }
     }
@@ -65,16 +64,15 @@ int get_mask(string word, char letter) {
 // Makes sure the word and mask are of the same length, and mask either has
 // the same contents as word, or a '?' where it differs from word
 // Also whenever a letter appears in word, the '?" in mask will be updated with letter
-void update_mask(string word, string& mask, char letter) {
+void update_mask(string word, string& mask, char letter){
     assert(word.length() == mask.length());
-    for (int i = 0; i < word.length(); i++) {
+    for(int i = 0; i < word.length(); i++){
         assert(word[i] == mask[i] || mask[i] == '?');
     }
     int set_points = get_mask(word, letter);
-    
     int n = mask.length() - 1;
-    while (set_points > 0) {
-        if (set_points % 2 == 1) {
+    while(set_points > 0){
+        if(set_points % 2 == 1){
             mask[n] = word[n];
         }
         n--;
@@ -84,7 +82,7 @@ void update_mask(string word, string& mask, char letter) {
 
 // Makes sure that the word and mask are of the same length
 // Returns true if word and mask have the same contents, and false otherwise.
-bool guessed(string word, string mask) {
+bool guessed(string word, string mask){
     assert(word.length() == mask.length());
     return word == mask;
 }
