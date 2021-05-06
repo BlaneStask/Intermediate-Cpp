@@ -56,13 +56,6 @@ Sample Output:
 
 5
 
-## Library Headers
-
-```C++
-#include <iostream>
-#include <string>
-using namespace std;
-```
 
 ## The algorithm for this problem: 
 
